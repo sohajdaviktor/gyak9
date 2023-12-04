@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gyak9", "gyak9\gyak9.csproj", "{D18BCAF2-E733-4110-A43E-706B693C974D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gyak9", "gyak9\gyak9.csproj", "{D18BCAF2-E733-4110-A43E-706B693C974D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hajo", "hajo\hajo.csproj", "{AE02D81A-F55C-4D30-BB7A-F670F44E7D00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D18BCAF2-E733-4110-A43E-706B693C974D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D18BCAF2-E733-4110-A43E-706B693C974D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D18BCAF2-E733-4110-A43E-706B693C974D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE02D81A-F55C-4D30-BB7A-F670F44E7D00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE02D81A-F55C-4D30-BB7A-F670F44E7D00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE02D81A-F55C-4D30-BB7A-F670F44E7D00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE02D81A-F55C-4D30-BB7A-F670F44E7D00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
