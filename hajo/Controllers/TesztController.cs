@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using gyak9.HajoContext;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal;
 
 namespace hajo.Controllers
 {
@@ -25,11 +27,25 @@ namespace hajo.Controllers
                 string nagybetusSzoveg = szoveg.ToUpper();
                 return Ok(szoveg.ToUpper());
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return BadRequest("Nem jó a bemenő adat!");
-            }
-            
+            }    
         }
+        [HttpGet]
+        [Route("questions/{sorszám}")]
+        public ActionResult M3(int sorszám)
+        {
+            HajosContext context = new HajosContext();
+            var kérdés = (from x in context.Questions
+                          where x.QuestionId == sorszám
+                          select x).FirstOrDefault();
+
+            if (kérdés == null) return BadRequest("Nincs ilyen sorszámú kérdés");
+
+            return new JsonResult(kérdés);
+        }
+
+
     }
 }
